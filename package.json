@@ -1,6 +1,6 @@
 {
   "name": "github-changes",
-  "version": "1.2.0-proxy",
+  "version": "1.2.1-proxy",
   "description": "generate changelog for github repos",
   "main": "./bin/index.js",
   "bin": {
