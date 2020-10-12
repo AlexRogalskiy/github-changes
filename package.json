@@ -1,6 +1,6 @@
 {
   "name": "github-changes",
-  "version": "1.1.2",
+  "version": "1.2.2-proxy",
   "description": "generate changelog for github repos",
   "main": "./bin/index.js",
   "bin": {
@@ -15,7 +15,8 @@
     "moment-timezone": "0.5.5",
     "nomnom": "1.6.2",
     "parse-link-header": "0.1.0",
-    "semver": "5.4.1"
+    "semver": "5.4.1",
+    "global-tunnel-ng": "2.7.1"
   },
   "devDependencies": {
     "json": "^9.0.2"
