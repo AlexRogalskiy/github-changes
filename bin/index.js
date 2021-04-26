@@ -13,6 +13,9 @@ const parser = require('commander');
 const semver = require('semver');
 const { Octokit } = require("@octokit/rest")
 const ghauth = Promise.promisify(require('ghauth'));
+const globalTunnel = require('global-tunnel-ng');
+
+globalTunnel.initialize();
 
 // Increase number of concurrent requests
 http.globalAgent.maxSockets = 30;
