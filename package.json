@@ -1,6 +1,6 @@
 {
   "name": "github-changes",
-  "version": "2.0.2",
+  "version": "2.0.2-proxy",
   "description": "generate changelog for github repos",
   "main": "./bin/index.js",
   "bin": {
@@ -11,6 +11,7 @@
     "bluebird": "^3.5.4",
     "commander": "^6.2.1",
     "ghauth": "^5.0.0",
+    "global-tunnel-ng": "2.7.1",
     "lodash": "^4.17.11",
     "moment-timezone": "^0.5.23",
     "semver": "^6.0.0"
