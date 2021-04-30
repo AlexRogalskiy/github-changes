@@ -11,11 +11,11 @@ const domain = require('domain');
 const moment = require('moment-timezone');
 const parser = require('commander');
 const semver = require('semver');
+const globalAgent = require('global-agent');
 const { Octokit } = require("@octokit/rest")
 const ghauth = Promise.promisify(require('ghauth'));
-const globalTunnel = require('global-tunnel-ng');
 
-globalTunnel.initialize();
+globalAgent.bootstrap();
 
 // Increase number of concurrent requests
 http.globalAgent.maxSockets = 30;
