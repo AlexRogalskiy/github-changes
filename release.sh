@@ -16,13 +16,13 @@ if ([ "$1" != "major" ] && [ "$1" != "minor" ] && [ "$1" != "patch" ])
     exit
 fi
 
-git checkout update-proxy
+git checkout master
 npm install
 npm version $1
 VERSION=`cat package.json | json version`
 node bin/index.js -o syncier -r github-changes --only-pulls -v -a --use-commit-body --reverse-changes -n v$VERSION
 git add CHANGELOG.md
 git commit --amend --no-edit
-git push origin update-proxy
+git push origin master
 git push origin --tags
 npm publish
